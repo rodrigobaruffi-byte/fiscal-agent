@@ -45,7 +45,7 @@ jobs:
         with:
           node-version: 24                                   # mesma versão do job typescript
           cache: npm                                         # guarda os pacotes do npm entre execuções
-          cache-dependency-path:front/package-lock.json      # o lock do FRONT (não o da raiz)
+          cache-dependency-path: front/package-lock.json     # o lock do FRONT (não o da raiz)
 
       - run: npm ci                                          # instala as versões exatas do package-lock.json do front
       - run: node --test src/notas.test.ts                   # roda os testes das funções do notas.ts
