@@ -1,10 +1,16 @@
-Description: 
+\# Fiscal Agent
+
+!\[CI](https://github.com/rodrigobaruffi-byte/fiscal-agent/actions/workflows/ci.yml/badge.svg)
+
+
 
 Brazilian fiscal invoice (NF-e) API with tax rule validation — the foundation of an AI agent for tax compliance
 
 
 
-Functions:
+\## Features
+
+
 
 CRUD on Fiscal Invoices
 
@@ -16,7 +22,11 @@ Front in React
 
 
 
-Stack:
+
+
+\## Stack
+
+
 
 Python + FastAPI
 
@@ -32,7 +42,11 @@ GitHub Actions for Testing
 
 
 
-How to Run
+
+
+\## How to Run
+
+
 
 Docker: docker compose up -d --build
 
@@ -42,13 +56,15 @@ Front: npm install + npm run dev
 
 
 
-Testing
+
+
+\## Testing
+
+
 
 .\\.venv\\Scripts\\activate
 
 pytest -q
-
-
 
 node --test src/notas.test.ts
 
@@ -56,7 +72,11 @@ npx tsc
 
 
 
-Next Steps
 
-LLM Extraction, RAG on fiscal rules, Human agents approval, quality checks, 
+
+\## Next Steps
+
+
+
+LLM Extraction, RAG on fiscal rules, Human agents approval, quality checks,
 
