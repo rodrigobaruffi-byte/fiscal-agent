@@ -1,5 +1,5 @@
-import { test } from "node:test";
-import assert from "node:assert/strict";
+import { assert, test } from "vitest";
+
 
 import { alterarItem, itemVazio, montarEnvio, notaVazia, totalDoFormulario, type ItemForm } from "./notas.ts";
 

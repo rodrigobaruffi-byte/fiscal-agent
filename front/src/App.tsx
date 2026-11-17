@@ -7,6 +7,8 @@
 import { useEffect, useState } from "react";
 import { FormNota } from "./FormNota.tsx";
 import { formatarMoeda, type NotaResumo } from "./notas.ts";
+import { Extracao} from "./extracao.tsx";
+
 
 export function App() {
   const [notas, setNotas] = useState<NotaResumo[]>([]);   // as notas vindas da API
@@ -32,6 +34,9 @@ export function App() {
       <h1>Notas fiscais</h1>
 
       {/* O formulário recebe a função carregar com o nome aoSalvar (uma "prop"). */}
+      <h2>Extrair de um documento</h2>
+      <Extracao />
+      
       <FormNota aoSalvar={carregar} />
 
       <h2>Notas cadastradas</h2>

@@ -1,3 +1,7 @@
 pytest
 psycopg[binary]
 fastapi[standard]
+anthropic
+google-genai
+ollama
+python-dotenv

@@ -11,7 +11,7 @@ CRUD on Fiscal Invoices
 Validates several Brazilian fiscal rules
 Lists, Reports
 Front in React
-
+LLM extration form a text of a fiscal document, with a structured exit.
 
 ## Stack
 Python + FastAPI
@@ -20,12 +20,14 @@ React
 TypeScript
 Docker for Postgree and API
 GitHub Actions for Testing
+Anthropic, Google Gemini, Ollama
 
 
 ## How to Run
 Docker: docker compose up -d --build
 API Address: http://127.0.0.1:8000/docs
 Front: npm install + npm run dev
+Configure .env with anthopic, gemini and ollama models that you preffer. API key required.
 
 
 ## Testing

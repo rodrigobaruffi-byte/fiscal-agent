@@ -1,4 +1,4 @@
-name: Testes
+name: CI
 
 on:
   push:
@@ -48,5 +48,5 @@ jobs:
           cache-dependency-path: front/package-lock.json     # o lock do FRONT (não o da raiz)
 
       - run: npm ci                                          # instala as versões exatas do package-lock.json do front
-      - run: node --test src/notas.test.ts                   # roda os testes das funções do notas.ts
+      - run: npm test                                        # roda os testes das funções do notas.ts
       - run: npx tsc                                         # confere os tipos (App.tsx, notas.ts, vite.config.ts)
