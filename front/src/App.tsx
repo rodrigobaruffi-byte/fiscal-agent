@@ -7,7 +7,7 @@
 import { useEffect, useState } from "react";
 import { FormNota } from "./FormNota.tsx";
 import { formatarMoeda, type NotaResumo } from "./notas.ts";
-import { Extracao} from "./extracao.tsx";
+import { Extracao } from "./Extracao.tsx";
 
 
 export function App() {
@@ -36,7 +36,7 @@ export function App() {
       {/* O formulário recebe a função carregar com o nome aoSalvar (uma "prop"). */}
       <h2>Extrair de um documento</h2>
       <Extracao />
-      
+
       <FormNota aoSalvar={carregar} />
 
       <h2>Notas cadastradas</h2>
